@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caesar · Delete your data and exercise your rights</title>
+<meta name="description" content="How to delete your data and exercise your GDPR rights.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="../logo.png" alt="" width="32" height="32"><span><b>C</b>aesar</span></a>
+<nav class="main" aria-label="Documents"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="legal.html">Legal notice</a><a href="security.html">Security</a><a href="delete.html" aria-current="page">Delete data</a></nav>
+<div class="lang" aria-label="Idioma / Language"><a href="../delete.html" hreflang="es" lang="es">ES</a><span>EN</span></div>
+</div></header>
+<main><div class="wrap">
+<h1><span class="hash">#</span>Delete your data and exercise your rights</h1>
+<div class="meta">Last updated: November 11, 2026</div>
+<section id="s1"><h2><span class="n">01</span>Sign out</h2>
+<p>Signing out deletes the session token from the keychain. It does not delete your account, your cloud data or your local data.</p>
+</section>
+<section id="s2"><h2><span class="n">02</span>Delete the account and cloud data</h2>
+<p>In the app: <strong>Settings → Sync → Delete account</strong>. This removes:</p><ul><li>The <code>sync/main</code> document (the encrypted blob).</li><li>The subscription state, if any existed.</li><li>The Firebase account.</li><li>The session token in the keychain.</li></ul><p>The effect is immediate, except technical copies Google may keep during its retention cycle.</p><div class="box warn"><p><strong>It does not delete local data.</strong> Your requests, collections and variables remain on your computer, and so does the data key in the keychain.</p></div>
+</section>
+<section id="s3"><h2><span class="n">03</span>Delete local data</h2>
+<p>To remove what Caesar stores on your computer:</p><ul><li>Delete the <code>datos.json</code> file (and its <code>.bak</code> and <code>.tmp</code> copies) from the app data folder.</li><li>Clear the app data (<code>localStorage</code>) using your system's data option or by deleting the app data folder.</li><li>Remove Caesar's entries from the operating system keychain (the data key and, if it remains, the session token).</li><li>Delete any exports you saved wherever you chose.</li></ul>
+</section>
+<section id="s4"><h2><span class="n">04</span>Exercise your GDPR rights</h2>
+<p>You can exercise your rights of access, rectification, erasure, restriction, portability and objection by writing to <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a>. State the right you are exercising and your account email. We may ask you to confirm your identity from that same email.</p><p>We will reply within the one-month period set by the GDPR.</p><div class="tw"><table><thead><tr><th>Right</th><th>How</th></tr></thead><tbody><tr><td>Access</td><td>We can tell you what is on record for your account: email, <code>uid</code>, dates and blob size. Only you can read the content: it is encrypted and we cannot decrypt it.</td></tr><tr><td>Rectification</td><td>Your email is managed with your sign-in provider; write to us if you need help.</td></tr><tr><td>Erasure</td><td>Use Settings → Sync → Delete account or ask by email.</td></tr><tr><td>Portability</td><td>Your data is on your computer; export it from the app whenever you want.</td></tr><tr><td>Restriction and objection</td><td>Write to us stating the reason.</td></tr></tbody></table></div><p>If you are not satisfied with the response, you can lodge a complaint with the Spanish Data Protection Agency (<a href="https://www.aepd.es">aepd.es</a>).</p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>Caesar is free software (MIT). Static site, no cookies or scripts.</p>
+<p><a href="https://github.com/cesargarridor/caesar">GitHub</a> · <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a></p>
+</div></footer>
+</body>
+</html>

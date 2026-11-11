@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caesar · Borrar tus datos y ejercer tus derechos</title>
+<meta name="description" content="Cómo borrar tus datos y ejercer tus derechos RGPD.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="logo.png" alt="" width="32" height="32"><span><b>C</b>aesar</span></a>
+<nav class="main" aria-label="Documentos"><a href="index.html">Inicio</a><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="legal.html">Aviso legal</a><a href="security.html">Seguridad</a><a href="delete.html" aria-current="page">Borrar datos</a></nav>
+<div class="lang" aria-label="Idioma / Language"><span>ES</span><a href="en/delete.html" hreflang="en" lang="en">EN</a></div>
+</div></header>
+<main><div class="wrap">
+<h1><span class="hash">#</span>Borrar tus datos y ejercer tus derechos</h1>
+<div class="meta">Última actualización: 11 de noviembre de 2026</div>
+<section id="s1"><h2><span class="n">01</span>Cerrar sesión</h2>
+<p>Cerrar sesión borra el token de sesión del llavero. No borra tu cuenta, tus datos de la nube ni tus datos locales.</p>
+</section>
+<section id="s2"><h2><span class="n">02</span>Borrar la cuenta y los datos de la nube</h2>
+<p>En la app: <strong>Ajustes → Sincronización → Borrar cuenta</strong>. Esto elimina:</p><ul><li>El documento <code>sync/main</code> (el bloque cifrado).</li><li>El estado de suscripción, si existiera.</li><li>La cuenta de Firebase.</li><li>El token de sesión del llavero.</li></ul><p>El efecto es inmediato, salvo copias técnicas que Google conserve durante su ciclo de retención.</p><div class="box warn"><p><strong>No borra datos locales.</strong> Tus peticiones, colecciones y variables siguen en tu equipo, y también la clave de datos del llavero.</p></div>
+</section>
+<section id="s3"><h2><span class="n">03</span>Borrar los datos locales</h2>
+<p>Para eliminar lo que Caesar guarda en tu equipo:</p><ul><li>Borra el fichero <code>datos.json</code> (y sus copias <code>.bak</code> y <code>.tmp</code>) de la carpeta de datos de la aplicación.</li><li>Borra los datos de la aplicación (<code>localStorage</code>) con la opción de datos del sistema o eliminando la carpeta de datos de la app.</li><li>Elimina del llavero del sistema operativo las entradas de Caesar (la clave de datos y, si queda, el token de sesión).</li><li>Borra las exportaciones que hayas guardado donde elegiste.</li></ul>
+</section>
+<section id="s4"><h2><span class="n">04</span>Ejercer tus derechos RGPD</h2>
+<p>Puedes ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a>. Indica el derecho que ejerces y el correo de tu cuenta. Podemos pedirte que confirmes tu identidad desde ese mismo correo.</p><p>Responderemos en el plazo de un mes previsto por el RGPD.</p><div class="tw"><table><thead><tr><th>Derecho</th><th>Cómo</th></tr></thead><tbody><tr><td>Acceso</td><td>Podemos indicarte qué consta de tu cuenta: correo, <code>uid</code>, fechas y tamaño del bloque. El contenido solo lo puedes leer tú: está cifrado y no podemos descifrarlo.</td></tr><tr><td>Rectificación</td><td>Tu correo se gestiona en tu proveedor de inicio de sesión; si necesitas ayuda, escríbenos.</td></tr><tr><td>Supresión</td><td>Usa Ajustes → Sincronización → Borrar cuenta o pídelo por correo.</td></tr><tr><td>Portabilidad</td><td>Tus datos están en tu equipo; exporta desde la app cuando quieras.</td></tr><tr><td>Limitación y oposición</td><td>Escríbenos indicando el motivo.</td></tr></tbody></table></div><p>Si no estás conforme con la respuesta, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<p>Caesar es software libre (MIT). Sitio estático, sin cookies ni scripts.</p>
+<p><a href="https://github.com/cesargarridor/caesar">GitHub</a> · <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a></p>
+</div></footer>
+</body>
+</html>
