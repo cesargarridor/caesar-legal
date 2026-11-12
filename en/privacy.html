@@ -17,7 +17,7 @@
 </div></header>
 <main><div class="wrap">
 <h1><span class="hash">#</span>Privacy policy</h1>
-<div class="meta">Last updated: November 11, 2026</div>
+<div class="meta">Last updated: November 12, 2026</div>
 <div class="box good"><p><strong>Summary.</strong> Caesar keeps your data on your computer. If you create an account to sync, only an end-to-end encrypted block is uploaded to the cloud, which neither Google nor the developer can read. There is no analytics, telemetry or tracking cookies.</p></div>
 <section id="s1"><h2><span class="n">01</span>Data controller</h2>
 <p>Cesar Garrido, natural person. Contact: <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a>. See also the <a href="legal.html">Legal notice</a>.</p>
@@ -31,8 +31,10 @@
 <section id="s4"><h2><span class="n">04</span>Account and sync (optional)</h2>
 <p>If you decide to create an account to sync between computers, this data is processed:</p><div class="tw"><table><thead><tr><th>Data</th><th>Recipient</th><th>Purpose</th></tr></thead><tbody><tr><td>Email and password (email+password) or Google/GitHub sign-in</td><td>Firebase Authentication (Google)</td><td>Identify you and keep your account</td></tr><tr><td>If you choose GitHub: GitHub id, username and email (scopes <code>read:user user:email</code>)</td><td>GitHub signs you in; Firebase stores that data</td><td>Sign in with GitHub (device flow)</td></tr><tr><td>User identifier (<code>uid</code>), sent in clear in the document path</td><td>Firestore (Google)</td><td>Associate your document with your account</td></tr><tr><td>A single document <code>users/{uid}/sync/main</code> with <code>{encrypted blob, updatedAt}</code></td><td>Firestore (Google), Europe multi-region (eur3)</td><td>Sync your data between computers</td></tr><tr><td>IP address on each connection, dates and blob size</td><td>Google / Firebase</td><td>Operation and security of the service</td></tr></tbody></table></div><p>Google/Firebase sees your email, your <code>uid</code>, your IP when connecting, dates and the blob size, but <strong>not its content</strong>: the blob is end-to-end encrypted with a key that exists only on your computers. If you lose the key and all your computers, the cloud data is unrecoverable and the developer cannot help you.</p>
 </section>
-<section id="s5"><h2><span class="n">05</span>Updates</h2>
-<p>Caesar checks for a new version by querying <code>github.com/cesargarridor/caesar/releases</code> (<code>latest.json</code> file, signed with minisign). Unless you turn it off in Settings, the update is installed automatically. When connecting, GitHub may log your IP under its own policy.</p>
+<section id="s5"><h2><span class="n">05</span>Updates, installer and code signing</h2>
+<p>On startup, and when you click "Check for updates", Caesar checks for a new version by querying <code>github.com/cesargarridor/caesar/releases</code> (<code>latest.json</code> file, signed with minisign). GitHub receives your IP address and a standard HTTPS request (usual headers such as the user agent) and may log them under its own policy; Caesar sends no identifiers, usage data or content of yours. Unless you turn it off in <strong>Settings → Updates</strong>, the update is downloaded and installed automatically.</p>
+<p>The installer and binaries do not collect data or contact the developer's servers, and there is no telemetry. When you download the installer from GitHub Releases, GitHub sees that download (your IP and the request) under its own policy.</p>
+<p><strong>Code signing (status as of November 12, 2026):</strong> macOS builds are signed and notarized with Apple; Windows and Linux builds are not code-signed yet (Windows may show SmartScreen or "unknown publisher"); updates are signed with minisign and the app verifies the signature. Details in the <a href="https://cesargarridor.github.io/caesar/en/download.html#code-signing-policy">code signing policy</a>.</p>
 </section>
 <section id="s6"><h2><span class="n">06</span>No analytics or cookies</h2>
 <p>Caesar includes no analytics, telemetry, tracking cookies or automatic crash reports. This website is static, uses no cookies or scripts, and is hosted on GitHub Pages.</p>
