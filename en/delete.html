@@ -12,28 +12,34 @@
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="index.html"><img src="../logo.png" alt="" width="32" height="32"><span><b>C</b>aesar</span></a>
-<nav class="main" aria-label="Documents"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="legal.html">Legal notice</a><a href="security.html">Security</a><a href="delete.html" aria-current="page">Delete data</a></nav>
+<nav class="main" aria-label="Documents"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refunds.html">Refunds</a><a href="legal.html">Legal notice</a><a href="security.html">Security</a><a href="delete.html" aria-current="page">Delete data</a></nav>
 <div class="lang" aria-label="Idioma / Language"><a href="../delete.html" hreflang="es" lang="es">ES</a><span>EN</span></div>
 </div></header>
 <main><div class="wrap">
 <h1><span class="hash">#</span>Delete your data and exercise your rights</h1>
-<div class="meta">Last updated: November 11, 2026</div>
+<div class="meta">Last updated: November 13, 2026</div>
 <section id="s1"><h2><span class="n">01</span>Sign out</h2>
-<p>Signing out deletes the session token from the keychain. It does not delete your account, your cloud data or your local data.</p>
+<p>Signing out deletes the session token from the keychain. It does not delete your account, your cloud data or your local data, and it does not cancel the subscription.</p>
 </section>
-<section id="s2"><h2><span class="n">02</span>Delete the account and cloud data</h2>
-<p>In the app: <strong>Settings → Sync → Delete account</strong>. This removes:</p><ul><li>The <code>sync/main</code> document (the encrypted blob).</li><li>The subscription state, if any existed.</li><li>The Firebase account.</li><li>The session token in the keychain.</li></ul><p>The effect is immediate, except technical copies Google may keep during its retention cycle.</p><div class="box warn"><p><strong>It does not delete local data.</strong> Your requests, collections and variables remain on your computer, and so does the data key in the keychain.</p></div>
+<section id="s2"><h2><span class="n">02</span>Cancel the subscription without deleting the account</h2>
+<p>You can cancel Pro without deleting anything: Settings → Account and subscription → "Manage subscription", or from the Lemon Squeezy customer portal. You keep Pro until the end of the paid period. See <a href="refunds.html">Refunds and cancellation</a>.</p>
 </section>
-<section id="s3"><h2><span class="n">03</span>Delete local data</h2>
-<p>To remove what Caesar stores on your computer:</p><ul><li>Delete the <code>datos.json</code> file (and its <code>.bak</code> and <code>.tmp</code> copies) from the app data folder.</li><li>Clear the app data (<code>localStorage</code>) using your system's data option or by deleting the app data folder.</li><li>Remove Caesar's entries from the operating system keychain (the data key and, if it remains, the session token).</li><li>Delete any exports you saved wherever you chose.</li></ul>
+<section id="s3"><h2><span class="n">03</span>Delete the account and cloud data</h2>
+<p>In the app: <strong>Settings → Account and subscription → Delete account</strong>. This:</p><ul><li><strong>Cancels the active subscription</strong> at Lemon Squeezy.</li><li>Deletes the <code>sync/main</code> document (the encrypted blob).</li><li>Deletes the acceptance record and subscription data.</li><li>Deletes the Firebase account.</li><li>Deletes the session token from the keychain.</li></ul><p>The effect is immediate, except technical copies Google may keep during its retention cycle. Billing and invoicing data is kept by Lemon Squeezy for as long as tax law requires. Accounts without a plan are deleted automatically after 7 days.</p><div class="box warn"><p><strong>It does not delete local data.</strong> Your requests, collections and variables stay on your computer, and so does the data key in the keychain.</p></div>
 </section>
-<section id="s4"><h2><span class="n">04</span>Exercise your GDPR rights</h2>
-<p>You can exercise your rights of access, rectification, erasure, restriction, portability and objection by writing to <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a>. State the right you are exercising and your account email. We may ask you to confirm your identity from that same email.</p><p>We will reply within the one-month period set by the GDPR.</p><div class="tw"><table><thead><tr><th>Right</th><th>How</th></tr></thead><tbody><tr><td>Access</td><td>We can tell you what is on record for your account: email, <code>uid</code>, dates and blob size. Only you can read the content: it is encrypted and we cannot decrypt it.</td></tr><tr><td>Rectification</td><td>Your email is managed with your sign-in provider; write to us if you need help.</td></tr><tr><td>Erasure</td><td>Use Settings → Sync → Delete account or ask by email.</td></tr><tr><td>Portability</td><td>Your data is on your computer; export it from the app whenever you want.</td></tr><tr><td>Restriction and objection</td><td>Write to us stating the reason.</td></tr></tbody></table></div><p>If you are not satisfied with the response, you can lodge a complaint with the Spanish Data Protection Agency (<a href="https://www.aepd.es">aepd.es</a>).</p>
+<section id="s4"><h2><span class="n">04</span>Delete local data</h2>
+<p>To remove what Caesar stores on your computer:</p><ul><li>Delete the <code>datos.json</code> file (and its <code>.bak</code> and <code>.tmp</code> copies) from the app's data folder.</li><li>Clear the app data (<code>localStorage</code>) with the system's data option or by deleting the app's data folder.</li><li>Remove Caesar's entries from the operating system keychain (the data key and, if left, the session token).</li><li>Delete any exports you saved where you chose.</li></ul>
+</section>
+<section id="s5"><h2><span class="n">05</span>Download your data and portability</h2>
+<p>In the app: <strong>Settings → Account and subscription → "Download my data"</strong>. It generates a JSON file with your account, your plan, your acceptance record and your local content, in a structured format you can keep or take to another service.</p>
+</section>
+<section id="s6"><h2><span class="n">06</span>Exercise your GDPR rights</h2>
+<p>You can exercise your rights of access, rectification, erasure, restriction, portability and objection by writing to <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a>. State the right you are exercising and your account email. We may ask you to confirm your identity from that same email. If the app is no longer available, write to that email too.</p><p>We will reply within the one-month period set by the GDPR.</p><div class="tw"><table><thead><tr><th>Right</th><th>How</th></tr></thead><tbody><tr><td>Access</td><td>We can tell you what we hold for your account: email, <code>uid</code>, plan, subscription status, acceptance record, dates and blob size. Only you can read the content: it is encrypted and we cannot decrypt it.</td></tr><tr><td>Rectification</td><td>Your email is managed at your sign-in provider; billing data, at Lemon Squeezy. If you need help, write to us.</td></tr><tr><td>Erasure</td><td>Use Settings → Account and subscription → Delete account or ask by email.</td></tr><tr><td>Portability</td><td>Use "Download my data" (JSON) or export from the app whenever you want.</td></tr><tr><td>Restriction and objection</td><td>Write to us stating the reason.</td></tr></tbody></table></div><p>If you disagree with the reply, you can lodge a complaint with the Spanish Data Protection Agency (<a href="https://www.aepd.es">aepd.es</a>).</p>
 </section>
 </div></main>
 <footer><div class="wrap">
-<p>Caesar is Fair Source (FSL license), not open source: selling it is prohibited. Static site, no cookies or scripts.</p>
-<p><a href="https://github.com/cesargarridor/caesar">GitHub</a> · <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a></p>
+<p>Caesar is source-available under the FSL-1.1-MIT license (not open-source software). Static site, no cookies or scripts.</p>
+<p><a href="https://github.com/cesargarridor/caesar">GitHub</a> · <a href="refunds.html">Refunds</a> · <a href="mailto:cecegames.app@gmail.com">cecegames.app@gmail.com</a></p>
 </div></footer>
 </body>
 </html>
